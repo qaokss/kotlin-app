@@ -1,0 +1,14 @@
+server:
+  port: 8450
+
+spring:
+  management:
+    health:
+      db:
+        enabled: true
+  datasource:
+    platform: postgres
+    url: jdbc:postgresql://host:port/otus_test
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: 123456
